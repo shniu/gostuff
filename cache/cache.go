@@ -32,9 +32,18 @@ func (mc *inMemoryCache) Set(key string, value []byte) error {
 
 func (mc *inMemoryCache) Get(key string) ([]byte, error) {
 
+	if key == "" {
+		return nil, errors.New("empty key is not allowed")
+	}
+
 	if value, ok := mc.entries[key]; ok {
 		return value, nil
 	}
 
 	return nil, errors.New("the key does not exist")
+}
+
+func (mc *inMemoryCache) Del(key string) error {
+	delete(mc.entries, key)
+	return nil
 }

@@ -71,3 +71,30 @@ func TestInMemoryCache_Get_NotExistKey_Then_error(t *testing.T) {
 	assert.Equal(t, "the key does not exist", err.Error())
 	assert.Nil(t, value)
 }
+
+func TestInMemoryCache_Get_EmptyKey_Then_error(t *testing.T) {
+	cache := &inMemoryCache{
+		entries: make(map[string][]byte),
+	}
+
+	value, err := cache.Get("")
+
+	assert.NotNil(t, err)
+	assert.Equal(t, "empty key is not allowed", err.Error())
+	assert.Nil(t, value)
+	assert.Equal(t, 0, len(cache.entries))
+}
+
+func TestInMemoryCache_Del_ExistKey_Then_succeed(t *testing.T) {
+	cache := &inMemoryCache{
+		entries: make(map[string][]byte),
+	}
+
+	key := "del"
+	_ = cache.Set(key, []byte("i will be deleted"))
+	err := cache.Del(key)
+
+	assert.Nil(t, err)
+	_, ok := cache.entries[key]
+	assert.False(t, ok)
+}
