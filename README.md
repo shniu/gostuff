@@ -7,7 +7,7 @@ An implement of Distributed cache
 ```bash
 
 # Get
-curl -v http://localhost:5000
+curl -v http://localhost:5000/api/cache/u_1234
 
 # Test: add cache
 curl -v -X PUT -d "bbbbbbbbbbbwwww" http://localhost:5000/api/cache/u_1234
