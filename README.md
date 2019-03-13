@@ -15,7 +15,7 @@ curl -v -X PUT -d "bbbbbbbbbbbwwww" http://localhost:5000/api/cache/u_1234
 # Response 200
 # {"code":0,"message":"succeed"} 
 
-curl -v -X PUT -d '{"key":"","value":"1009873"}' http://localhost:5000/api/cache/
+curl -v -X PUT -d "{\"name\":\"xx\",\"age\":\"100\"}" http://localhost:5000/api/cache/u:999
 # Response should be:
 # Response 400
 ```

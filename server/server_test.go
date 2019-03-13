@@ -46,7 +46,7 @@ func Test_handleCache_When_GetNotExistKey_Then_GotNon(t *testing.T) {
 
 	resp := getTestHandlerResp(t, req, s.handleCache)
 
-	assertCode(t, resp, 0)
+	assertCode(t, resp, 404)
 	assertData(t, resp, "")
 }
 
@@ -57,6 +57,17 @@ func Test_handleCache_When_GetExistKey_Then_GotTheValue(t *testing.T) {
 	resp := getTestHandlerResp(t, req, s.handleCache)
 	assertCode(t, resp, 0)
 	assertData(t, resp, "unit test")
+}
+
+func Test_handleCache_When_DelExistKey_Then_GotSucceed(t *testing.T) {
+	key := "k1"
+	_, _ = http.NewRequest(http.MethodPut, "/api/cache/"+key, bytes.NewBuffer([]byte("opus!!!")))
+	req, _ := http.NewRequest(http.MethodDelete, "/api/cache/"+key, nil)
+	resp := getTestHandlerResp(t, req, s.handleCache)
+	assertCode(t, resp, 0)
+	_, e := s.cache.Get(key)
+	assert.NotNil(t, e)
+	assert.Equal(t, "the key does not exist", e.Error())
 }
 
 func assertMessage(t *testing.T, resp map[string]interface{}, exceptedMsg string) {
@@ -80,9 +91,6 @@ func getTestHandlerResp(t *testing.T, request *http.Request, handlerFunc func(ht
 	assert.Equal(t, http.StatusOK, rr.Code,
 		fmt.Sprintf("handler returned wrong status code: got %v want %v", rr.Code, http.StatusOK))
 
-	// https://blog.golang.org/json-and-go
-	// https://golang.org/pkg/encoding/json/
-	// https://eager.io/blog/go-and-json/
 	var resp map[string]interface{}
 	e := json.Unmarshal(rr.Body.Bytes(), &resp)
 	assert.Nil(t, e, fmt.Sprintf("Unmarshal error should be nil, but got %v", e))
