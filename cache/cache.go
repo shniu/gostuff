@@ -7,5 +7,5 @@ type Cache interface {
 	Set(string, []byte) error
 	Get(string) ([]byte, error)
 	Del(string) error
-	GetStat() []byte
+	GetStat() Stat
 }

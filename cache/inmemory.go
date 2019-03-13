@@ -1,19 +1,28 @@
 package cache
 
-import "errors"
+import (
+	"errors"
+	"sync"
+)
 
 type inMemoryCache struct {
 	// https://blog.golang.org/go-maps-in-action
 	entries map[string][]byte
+
+	mutex sync.RWMutex
+	Stat
 }
 
-func NewInMemoryCache() Cache {
+func newInMemoryCache() Cache {
 	return &inMemoryCache{
 		entries: make(map[string][]byte),
 	}
 }
 
 func (mc *inMemoryCache) Set(key string, value []byte) error {
+	mc.mutex.Lock()
+	defer mc.mutex.Unlock()
+
 	if key == "" {
 		return errors.New("empty key is not allowed")
 	}
@@ -27,6 +36,8 @@ func (mc *inMemoryCache) Set(key string, value []byte) error {
 }
 
 func (mc *inMemoryCache) Get(key string) ([]byte, error) {
+	mc.mutex.RLock()
+	defer mc.mutex.RUnlock()
 
 	if key == "" {
 		return nil, errors.New("empty key is not allowed")
@@ -40,10 +51,13 @@ func (mc *inMemoryCache) Get(key string) ([]byte, error) {
 }
 
 func (mc *inMemoryCache) Del(key string) error {
+	mc.mutex.Lock()
+	defer mc.mutex.Unlock()
+
 	delete(mc.entries, key)
 	return nil
 }
 
-func (mc *inMemoryCache) GetStat() []byte {
-	return nil
+func (mc *inMemoryCache) GetStat() Stat {
+	return mc.Stat
 }

@@ -8,6 +8,6 @@ import (
 
 func main() {
 	fmt.Println("Start Cache server, and listen on 0.0.0.0:5000")
-	c := cache.NewInMemoryCache()
+	c := cache.NewCache("inMemoryCache")
 	server.New(c)
 }
