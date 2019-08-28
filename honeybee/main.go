@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/shniu/cache/cache"
-	"github.com/shniu/cache/server"
+	"github.com/shniu/gostuff/honeybee/cache"
+	"github.com/shniu/gostuff/honeybee/server"
 )
 
 func main() {

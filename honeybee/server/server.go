@@ -3,7 +3,7 @@ package server
 import (
 	"encoding/json"
 	"fmt"
-	cache2 "github.com/shniu/cache/cache"
+	cache2 "github.com/shniu/gostuff/honeybee/cache"
 	"io/ioutil"
 	"net/http"
 	"strings"

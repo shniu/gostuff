@@ -1,21 +1,15 @@
-# cache
 
-An implement of Distributed cache
+## gostaff
 
-## Test case
+所有关于golang生态相关的学习、项目、可复用组件、最佳实践等都集中在这里。
 
-```bash
+```
+|- honeybee  // 缓存相关的实现
+|- kvs       // key value store 的实现
+|- leetcode  // leetcode 算法题解
+|- libs      // 一些可复用组件
 
-# Get
-curl -v http://localhost:5000/api/cache/u_1234
-
-# Test: add cache
-curl -v -X PUT -d "bbbbbbbbbbbwwww" http://localhost:5000/api/cache/u_1234
-# Response should be: 
-# Response 200
-# {"code":0,"message":"succeed"} 
-
-curl -v -X PUT -d "{\"name\":\"xx\",\"age\":\"100\"}" http://localhost:5000/api/cache/u:999
-# Response should be:
-# Response 400
+|- spkie     // 技术调研时写的一些示例代码
+|- examples  // 学习相关的一些代码
+- README.md  // readme
 ```

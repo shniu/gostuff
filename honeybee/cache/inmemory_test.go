@@ -1,9 +1,9 @@
 package cache
 
 import (
-	"github.com/shniu/cache/util"
 	"github.com/stretchr/testify/assert"
 	"testing"
+	"github.com/shniu/gostuff/honeybee/util"
 )
 
 func init() {
