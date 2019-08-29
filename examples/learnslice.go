@@ -3,6 +3,7 @@ package examples
 import (
 	"fmt"
 	"reflect"
+	"strconv"
 )
 
 func ArrayToSlice(a [3]int, b []int) {
@@ -18,7 +19,7 @@ func ArrayToSlice(a [3]int, b []int) {
 	fmt.Printf("type: %T\n", s)
 
 	// Copy
-	var d = make([]int, len(s), cap(s) * 2 + 1)
+	var d = make([]int, len(s), cap(s)*2+1)
 	copy(d, s)
 	fmt.Printf("copy: %v\n", d)
 
@@ -44,6 +45,14 @@ func ArrayToSlice(a [3]int, b []int) {
 	d = d[1:]
 	fmt.Printf("after reslice: %v, %v\n", len(d), cap(d))
 	fmt.Printf("after reslice: %v, %v\n", len(dd), cap(dd))
+
+	// ---
+	var age = make([]int, 100)
+	age[20] = 80
+	age1 := age[10:10]
+	fmt.Printf("age: %v\n", age1) // []
+	age2 := age1[10:20]
+	fmt.Printf("age: %v\n", age2) // [80 0 0 0 0 0 0 0 0 0]
 }
 
 func typeOf(v interface{}) string {
@@ -54,4 +63,33 @@ func typeOf(v interface{}) string {
 		_ = t
 		return "Unknown"
 	}
+}
+
+// 字符缓冲的例子
+func SliceIntToString1(s []int) string {
+	if len(s) == 0 {
+		return ""
+	}
+
+	str := make([]byte, 0, 512)
+	str = append(str, strconv.Itoa(s[0])...)
+	for i := 1; i < len(s); i++ {
+		str = append(str, ',')
+		str = append(str, strconv.Itoa(s[i])...)
+	}
+
+	return string(str)
+}
+
+func SliceIntToString2(s []int) string {
+	if len(s) == 0 {
+		return ""
+	}
+
+	str := strconv.Itoa(s[0])
+	for i := 1; i < len(s); i++ {
+		str = str + "," + strconv.Itoa(s[i])
+	}
+
+	return str
 }
