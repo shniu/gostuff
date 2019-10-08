@@ -1,5 +1,7 @@
 package leetcode
 
+import "github.com/shniu/gostuff/kvs/errors"
+
 // 实现一个 RingBuffer
 // fill count
 type RingBuffer struct {
@@ -14,12 +16,16 @@ type RingBuffer struct {
 	elements []int
 }
 
-func NewRingBuffer(capacity int) *RingBuffer {
+func NewRingBuffer(capacity int) (*RingBuffer, error) {
+	if capacity <= 0 {
+		return nil, errors.New("Capacity must be greater than zero.")
+	}
+
 	return &RingBuffer{
 		writePos: 0,
 		capacity: capacity,
 		elements: make([]int, capacity),
-	}
+	}, nil
 }
 
 func (r *RingBuffer) Put(element int) bool {

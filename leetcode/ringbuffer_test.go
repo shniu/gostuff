@@ -8,7 +8,7 @@ import (
 
 
 func TestRingBuffer(t *testing.T) {
-	rb := NewRingBuffer(5)
+	rb, _ := NewRingBuffer(5)
 	rb.Put(1)
 	rb.Put(30)
 	rb.Put(2)
@@ -42,4 +42,10 @@ func TestRingBuffer(t *testing.T) {
 	assert.Equal(t, false, ok)
 	assert.Equal(t, -1, v)
 	fmt.Println(rb)
+}
+
+func TestRingBuffer_init(t *testing.T) {
+	_, err := NewRingBuffer(0)
+	assert.NotNil(t, err)
+	assert.EqualError(t, err, "Capacity must be greater than zero.")
 }
