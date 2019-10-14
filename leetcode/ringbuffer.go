@@ -1,6 +1,8 @@
 package leetcode
 
-import "github.com/shniu/gostuff/kvs/errors"
+import (
+	"github.com/shniu/gostuff/kvs/errors"
+)
 
 // 实现一个 RingBuffer
 // fill count
