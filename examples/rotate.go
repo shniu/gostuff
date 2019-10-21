@@ -1,7 +1,5 @@
 package examples
 
-import "fmt"
-
 func rotate(nums []int, k int) {
 	length := len(nums)
 
