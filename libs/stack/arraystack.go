@@ -1,5 +1,7 @@
 package stack
 
+// https://github.com/gaopeng527/go_Algorithm/blob/master/stack.go
+
 // ArrayStack 的通用实现
 // 顺序栈的实现
 type ArrayStack struct {
