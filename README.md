@@ -27,6 +27,10 @@
 - [Cizixs Write Here](https://cizixs.com/) 是一个关于 Container, Microservice, Python, Go, Reading, Life, And Love 的博客站点
 - [kgrz.io](https://kgrz.io/)
 
+#### Book
+
+- [Go语言 101](https://gfw.go101.org/article/101.html)
+
 #### Golang libs
 
 - [awesome-go](https://github.com/avelino/awesome-go) 和 golang 相关的框架、库和软件的清单
