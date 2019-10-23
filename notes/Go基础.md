@@ -57,6 +57,10 @@ s=s[:10] s=s[10:] s=s[10:20]
 s=ss[0:10:20] 
 ```
 
+#### Maps
+
+- [go maps](https://blog.golang.org/go-maps-in-action)
+
 ### Errors
 
 Golang 的错误类型
