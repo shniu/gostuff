@@ -19,8 +19,15 @@
 
 #### 资料
 
+- Go语言规范文档 (https://golang.google.cn/ref/spec)
+- Go语言命令文档 (https://golang.google.cn/doc/cmd)
+- Go语言wiki (https://github.com/golang/go/wiki)
+- Effective Go (https://golang.google.cn/doc/effective_go.html)
+- Go 内存模型(https://golang.google.cn/ref/mem)
+- Go 程序诊断 (https://golang.google.cn/doc/diagnostics.html)
 - [Golang 官方博客](https://blog.golang.org/index)
 - [Golang 第三方仓库的整合与索引](https://libs.garden/go) 非常值得关注，能看到大家都在关注些什么
+- [GO 命令教程](https://github.com/hyper0x/go_command_tutorial)
 
 ##### 博客站点
 
@@ -38,3 +45,4 @@
 - [cobra](https://github.com/spf13/cobra) 是一个强大的创建CLI应用的库，也是一个生成应用和命令文件的库，应用非常广泛，14K+ star
 - [viper](https://github.com/spf13/viper) 是一个 Go 应用的配置解决方案，配合cobra使用非常cool，10k+ star
 - [go hugo](https://gohugo.io/) The world’s fastest framework for building websites, 39k+ star
+- [go wiki projects](https://github.com/golang/go/wiki/Projects)
