@@ -26,6 +26,7 @@
 
 - [Cizixs Write Here](https://cizixs.com/) 是一个关于 Container, Microservice, Python, Go, Reading, Life, And Love 的博客站点
 - [kgrz.io](https://kgrz.io/)
+- [golang 语言社区](https://www.kancloud.cn/cserli/golang)
 
 #### Book
 
