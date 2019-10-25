@@ -66,3 +66,7 @@ s=ss[0:10:20]
 Golang 的错误类型
 
 - [go error are values](https://blog.golang.org/errors-are-values)
+
+### Go 指针
+
+- [Go指针](https://www.kancloud.cn/itfanr/go-quick-learn/81640)
