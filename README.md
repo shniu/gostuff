@@ -8,6 +8,8 @@
 |- kvs       // key value store 的实现
 |- leetcode  // leetcode 算法题解
 |- libs      // 一些可复用组件
+|- projects  // 一些实际项目
+    |- paint  // 画图程序
 
 |- spkie     // 技术调研时写的一些示例代码
 |- examples  // 学习相关的一些代码
@@ -28,6 +30,7 @@
 - [Golang 官方博客](https://blog.golang.org/index)
 - [Golang 第三方仓库的整合与索引](https://libs.garden/go) 非常值得关注，能看到大家都在关注些什么
 - [GO 命令教程](https://github.com/hyper0x/go_command_tutorial)
+- [大道至简的Go语言-七牛云](http://open.qiniu.us/go-next-c.pdf)
 
 ##### 博客站点
 
