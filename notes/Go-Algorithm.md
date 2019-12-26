@@ -6,3 +6,7 @@
 ## 第三方库
 
 - [二叉树及遍历 排序算法 栈 字典树](https://github.com/gaopeng527/go_Algorithm)
+
+## 面试算法题
+
+- [参见：Go面试算法题](Go面试算法题.md)

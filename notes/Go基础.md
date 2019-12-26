@@ -14,6 +14,8 @@ Golang 中数组类型指定长度和元素类型；数组不需要显示初始�
 3. copy
 4. append
 
+- [Arrays, slices (and strings): The mechanics of 'append'](https://blog.golang.org/slices)
+
 - [Go Slices: usage and internals](https://blog.golang.org/go-slices-usage-and-internals) [中文翻译版](https://blog.go-zh.org/go-slices-usage-and-internals)
 
 这是一篇关于 Go Slices 的官方博客，用来介绍 Slice 的底层实现及使用
