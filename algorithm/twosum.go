@@ -1,4 +1,4 @@
-package leetcode
+package algorithm
 
 func twoSum(nums []int, target int) []int {
 

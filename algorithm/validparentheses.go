@@ -1,4 +1,4 @@
-package leetcode
+package algorithm
 
 //m := make(map[string]string)
 //m[")"] = "("

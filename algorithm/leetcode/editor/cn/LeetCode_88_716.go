@@ -34,7 +34,7 @@ func merge2(nums1 []int, m int, nums2 []int, n int) {
 	}
 }
 
-//leetcode submit region begin(Prohibit modification and deletion)
+//algorithm submit region begin(Prohibit modification and deletion)
 func merge(nums1 []int, m int, nums2 []int, n int)  {
 	tmpRes := make([]int, m + n)
 
@@ -60,4 +60,4 @@ func merge(nums1 []int, m int, nums2 []int, n int)  {
 
 	copy(nums1, tmpRes)
 }
-//leetcode submit region end(Prohibit modification and deletion)
+//algorithm submit region end(Prohibit modification and deletion)

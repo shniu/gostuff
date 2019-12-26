@@ -40,7 +40,7 @@ package cn
 // Related Topics 数组 双指针
 
 
-//leetcode submit region begin(Prohibit modification and deletion)
+//algorithm submit region begin(Prohibit modification and deletion)
 func removeDuplicates(nums []int) int {
 	var length = len(nums)
 	if length <= 1 {
@@ -65,4 +65,4 @@ func removeDuplicates(nums []int) int {
 
     return insertPos
 }
-//leetcode submit region end(Prohibit modification and deletion)
+//algorithm submit region end(Prohibit modification and deletion)

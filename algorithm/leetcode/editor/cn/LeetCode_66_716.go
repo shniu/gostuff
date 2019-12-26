@@ -21,7 +21,7 @@ package cn
 // 
 // Related Topics 数组
 
-//leetcode submit region begin(Prohibit modification and deletion)
+//algorithm submit region begin(Prohibit modification and deletion)
 func plusOne(digits []int) []int {
 	//length := len(digits)
 	//
@@ -34,4 +34,4 @@ func plusOne(digits []int) []int {
 	return nil
 }
 
-//leetcode submit region end(Prohibit modification and deletion)
+//algorithm submit region end(Prohibit modification and deletion)

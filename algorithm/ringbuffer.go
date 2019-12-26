@@ -1,4 +1,4 @@
-package leetcode
+package algorithm
 
 import (
 	"github.com/shniu/gostuff/kvs/errors"
