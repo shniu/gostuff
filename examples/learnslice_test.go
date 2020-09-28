@@ -1,8 +1,8 @@
 package examples
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func TestArrayToSlice(t *testing.T) {
