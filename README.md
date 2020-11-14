@@ -49,3 +49,6 @@
 - [viper](https://github.com/spf13/viper) 是一个 Go 应用的配置解决方案，配合cobra使用非常cool，10k+ star
 - [go hugo](https://gohugo.io/) The world’s fastest framework for building websites, 39k+ star
 - [go wiki projects](https://github.com/golang/go/wiki/Projects)
+- [go metrics](https://github.com/rcrowley/go-metrics)
+- [58 wpaxos](https://github.com/wuba/WPaxos)
+- [etcd](https://github.com/etcd-io/etcd)

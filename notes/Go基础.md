@@ -1,6 +1,10 @@
 
 ## Golang 基础知识
 
+### Go modules
+
+- [Introduction to Go Modules](https://roberto.selbach.ca/intro-to-go-modules/)
+
 ### Array & Slices
 
 Golang 中数组类型指定长度和元素类型；数组不需要显示初始化，会按照指定类型的默认值初始化；数组是值类型，数组变量代表了整个数组，
@@ -22,7 +26,7 @@ Golang 中数组类型指定长度和元素类型；数组不需要显示初始�
 
 - [Slice 的使用技巧](https://segmentfault.com/a/1190000018015717)
 
-```go
+```golng
 // 数组声明
 var var_name [SIZE] var_type
 e.g.

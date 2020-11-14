@@ -1,11 +1,11 @@
 package csp
 
 import (
-	"testing"
-	"math/rand"
-	"time"
-	"sync"
 	"fmt"
+	"math/rand"
+	"sync"
+	"testing"
+	"time"
 )
 
 var r = rand.New(rand.NewSource(time.Now().UnixNano()))
@@ -14,7 +14,7 @@ var wg sync.WaitGroup
 func f(s string) {
 	defer wg.Done()
 	// Sleep up to half a second
-	delay := time.Duration(r.Int() % 500) * time.Millisecond
+	delay := time.Duration(r.Int()%500) * time.Millisecond
 	time.Sleep(delay)
 	fmt.Println(s)
 }
