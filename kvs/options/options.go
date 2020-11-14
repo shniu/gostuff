@@ -2,10 +2,11 @@ package options
 
 import (
 	"fmt"
-	"github.com/shniu/gostuff/kvs/log"
 	"os"
 	"path"
 	"reflect"
+
+	"github.com/shniu/gostuff/kvs/log"
 )
 
 var logger = log.Logger

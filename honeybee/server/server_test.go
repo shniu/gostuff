@@ -4,11 +4,12 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/shniu/cache/cache"
-	"github.com/stretchr/testify/assert"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/shniu/gostuff/honeybee/cache"
+	"github.com/stretchr/testify/assert"
 )
 
 // Test http handler: https://blog.questionable.services/article/testing-http-handlers-go/
@@ -17,7 +18,7 @@ var s *Server
 var c cache.Cache
 
 func init() {
-	c = cache.NewInMemoryCache()
+	c = cache.NewCache("inMemoryCache")
 	s = &Server{cache: c}
 }
 
