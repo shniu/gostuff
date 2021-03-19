@@ -53,5 +53,5 @@ func Open(opts *options.KvsOptions) (Kvs, error) {
 }
 
 func merge() {
-
+    // TODO merge function
 }

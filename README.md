@@ -37,6 +37,8 @@
 - [Cizixs Write Here](https://cizixs.com/) 是一个关于 Container, Microservice, Python, Go, Reading, Life, And Love 的博客站点
 - [kgrz.io](https://kgrz.io/)
 - [golang 语言社区](https://www.kancloud.cn/cserli/golang)
+- [徐旭 的个人博客](https://note.mogutou.xyz/)
+- https://bytemode.github.io/reading/
 
 #### Book
 
@@ -52,3 +54,5 @@
 - [go metrics](https://github.com/rcrowley/go-metrics)
 - [58 wpaxos](https://github.com/wuba/WPaxos)
 - [etcd](https://github.com/etcd-io/etcd)
+- [go-disruptor](https://github.com/smartystreets-prototypes/go-disruptor)
+- [gnet](https://github.com/panjf2000/gnet) - gnet is a high-performance, lightweight, non-blocking, event-driven networking framework written in pure Go.

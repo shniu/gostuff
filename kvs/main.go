@@ -19,7 +19,7 @@ import (
 var logger = log.Logger
 
 func main() {
-	logger.Info("============ Start K V S ============")
+	logger.Info("============ Start KVS ============")
 
 	home := flag.String("home", "/tmp/kvs", "Home directory for kvs db")
 	port := flag.String("port", "3000", "Server listen address")

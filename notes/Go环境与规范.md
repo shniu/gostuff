@@ -1,5 +1,9 @@
 # Golang 环境与开发规范
 
+## Go 安装和环境搭建
+
+1. [Golang Install](https://golang.org/doc/install)
+
 ## Golang 开发规范
 
 可参考 

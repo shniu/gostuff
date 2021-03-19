@@ -4,7 +4,8 @@ An implementation of kvs using Golang.
 
 ## Project
 
-There are many ways to implement the KVS, each have advantages and disadvantages, and is a process of continuous optimization, such as bitcask, leveldb, rocksdb, couchdb, Cassandra, HBase, Redis, Memcached, LMDB, Dynamo, badger, boltdb, Riak, etc.
+There are many ways to implement the KVS, each have advantages and disadvantages, and is a process of continuous optimization, 
+such as bitcask, leveldb, rocksdb, couchdb, Cassandra, HBase, Redis, Memcached, LMDB, Dynamo, badger, boltdb, Riak, etc.
 
 So consider the project is divided into different categories, to store different implementations, such easy to manage:
 

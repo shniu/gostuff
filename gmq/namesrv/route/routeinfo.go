@@ -12,6 +12,14 @@ type RouteInfoManager interface {
     ScanNotActiveBroker()
 }
 
+type QueueData struct {
+    BrokerName string
+    ReadQueueNums int
+    WriteQueueNums int
+    Perm int
+    TopicSyncFlag int
+}
+
 func NewRouteInfoManager() {
 	fmt.Print("New route infos.")
 }
