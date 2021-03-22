@@ -39,10 +39,14 @@
 - [golang 语言社区](https://www.kancloud.cn/cserli/golang)
 - [徐旭 的个人博客](https://note.mogutou.xyz/)
 - https://bytemode.github.io/reading/
+- [为什么这么设计系列文章](https://draveness.me/whys-the-design/) - 一系列关于计算机领域中程序设计决策的文章
 
 #### Book
 
 - [Go语言 101](https://gfw.go101.org/article/101.html)
+- [Go 语言设计与实现](https://draveness.me/golang/)
+  - 目标读者：学习过 Go 语言并且想要理解背后设计与实现的开发者和有过其他语言的开发经验，想要学习 Go 语言的开发者
+  - 本书主要是分析 Golang 内部的实现原理，有一定深度
 
 #### Golang libs
 

@@ -1,4 +1,4 @@
-package algorithm
+package cn
 
 import "strconv"
 

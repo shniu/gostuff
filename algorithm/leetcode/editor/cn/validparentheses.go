@@ -1,4 +1,4 @@
-package algorithm
+package cn
 
 //m := make(map[string]string)
 //m[")"] = "("

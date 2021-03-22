@@ -1,8 +1,8 @@
-package algorithm
+package cn
 
 import (
-	"testing"
 	"github.com/stretchr/testify/assert"
+	"testing"
 )
 
 func TestValidParentheses_simple(t *testing.T) {

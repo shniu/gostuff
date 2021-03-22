@@ -1,0 +1,48 @@
+# Queue
+
+## Golang 中实现队列功能的最简单方法
+
+```go
+package demo
+import (
+
+"container/list"
+"fmt"
+)
+
+// 利用 slice
+func queueBySlice() {
+    var queue []int
+    
+    // Enqueue
+    queue = append(queue, 1)
+    queue = append(queue, 0)
+
+    head := queue[0]
+    queue[0] = 0
+    // Dequeue
+    queue = queue[1:]
+    fmt.Println("Head of queue ", head)
+}
+
+// 利用 list
+func queueByList() {
+    // Create
+    queue := list.New()
+    
+    // Enqueue
+    queue.PushBack("Hello ")
+    queue.PushBack("world!")
+    
+    for queue.Len() > 0 {
+        // Print first
+        e := queue.Front()
+        fmt.Print(e.Value)
+
+        // Dequeue
+        queue.Remove(e)
+    }
+}
+```
+
+- [go-queue](https://github.com/phf/go-queue/blob/master/queue/queue.go)
