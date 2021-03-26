@@ -5,7 +5,7 @@ package cn
 //m["}"] = "{"
 //m["]"] = "["
 
-func isValid(s string) bool {
+func isValidParentheses(s string) bool {
 	m := map[string]string{")": "(", "}": "{", "]": "["}
 
 	var stack []string
