@@ -1,4 +1,7 @@
 package cn
+
+import "math"
+
 //路径 被定义为一条从树中任意节点出发，沿父节点-子节点连接，达到任意节点的序列。同一个节点在一条路径序列中 至多出现一次 。该路径 至少包含一个 节点，且不
 //一定经过根节点。 
 //
@@ -45,6 +48,63 @@ package cn
  * }
  */
 func maxPathSum(root *TreeNode) int {
+	var maxSumVal = math.MinInt32
 
+	var nodeMaxGain func(root *TreeNode) int
+	nodeMaxGain = func(root *TreeNode) int {
+		if root == nil {
+			return 0
+		}
+
+		maxLeft := maxSum(nodeMaxGain(root.Left), 0);
+		maxRight := maxSum(nodeMaxGain(root.Right), 0);
+
+		newPathGain := maxLeft + maxRight + root.Val
+
+		maxSumVal = maxSum(newPathGain, maxSumVal)
+
+		return root.Val + maxSum(maxRight, maxLeft)
+	}
+
+	nodeMaxGain(root)
+	return maxSumVal
+}
+
+func maxSum(x, y int) int {
+	if x > y {
+		return x
+	}
+	return y
 }
 //leetcode submit region end(Prohibit modification and deletion)
+
+// 下面的解法可以优化
+//var maxSumVal = math.MinInt32
+//func maxPathSum(root *TreeNode) int {
+//	nodeMaxGain(root)
+//	res := maxSumVal
+//	maxSumVal = math.MinInt32
+//	return res
+//}
+//
+//func nodeMaxGain(root *TreeNode) int {
+//	if root == nil {
+//		return 0
+//	}
+//
+//	maxLeft := maxSum(nodeMaxGain(root.Left), 0);
+//	maxRight := maxSum(nodeMaxGain(root.Right), 0);
+//
+//	newPathGain := maxLeft + maxRight + root.Val
+//
+//	maxSumVal = maxSum(newPathGain, maxSumVal)
+//
+//	return root.Val + maxSum(maxRight, maxLeft)
+//}
+//
+//func maxSum(x, y int) int {
+//	if x > y {
+//		return x
+//	}
+//	return y
+//}
