@@ -32,6 +32,11 @@
 - [GO 命令教程](https://github.com/hyper0x/go_command_tutorial)
 - [大道至简的Go语言-七牛云](http://open.qiniu.us/go-next-c.pdf)
 
+##### training
+
+- [Go 进阶训练营](https://pan.baidu.com/disk/main?from=oldversion#/index?category=all&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2FGo%E8%BF%9B%E9%98%B6%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F)
+- [golang 练习](https://github.com/cncamp/golang)
+
 ##### 博客站点
 
 - [Cizixs Write Here](https://cizixs.com/) 是一个关于 Container, Microservice, Python, Go, Reading, Life, And Love 的博客站点
