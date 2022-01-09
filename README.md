@@ -3,19 +3,13 @@
 
 所有关于golang生态相关的学习、项目、可复用组件、最佳实践等都集中在这里。
 
-```
-|- honeybee  // 缓存相关的实现
-|- kvs       // key value store 的实现
-|- leetcode  // leetcode 算法题解
-|- libs      // 一些可复用组件
-|- projects  // 一些实际项目
-    |- paint  // 画图程序
+重新整理目录 (目录规范)
 
-|- spkie     // 技术调研时写的一些示例代码
-|- examples  // 学习相关的一些代码
-|- notes     // 学习笔记、总结等
-- README.md  // readme
-```
+- docs  存放文档
+- examples 一些例子、Spike Code 等
+- internal
+- pkg
+- projects 汇总一些练手小项目
 
 ### Learn Golang
 
@@ -65,3 +59,10 @@
 - [etcd](https://github.com/etcd-io/etcd)
 - [go-disruptor](https://github.com/smartystreets-prototypes/go-disruptor)
 - [gnet](https://github.com/panjf2000/gnet) - gnet is a high-performance, lightweight, non-blocking, event-driven networking framework written in pure Go.
+- [env](https://github.com/timest/env) This lib is used for dealing with environment variables in Golang
+
+日志
+
+- glog
+- golang 官方 log: https://github.com/golang/go/tree/master/src/log
+- logru: https://github.com/sirupsen/logrus
