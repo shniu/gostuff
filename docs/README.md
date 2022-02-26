@@ -1,5 +1,13 @@
 # Go 生态
 
+怎么把学习的东西梳理串联起来，是一个问题
+
+环境与包管理
+基本语法
+数据结构
+接口与抽象：interface, struct 等
+并发
+
 Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造；docs 目录下存放学习 Go 的所有文档：总结、笔记等
 
 - [Go 语言基础](core/README.md) - Go 语言核心功能
@@ -12,7 +20,11 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 
 其他
 
+- [学习 Golang Code](https://www.notion.so/shniu/golang-40ee2f6810b340878eee1af312f06e96)
+  - [Codis](https://github.com/CodisLabs/codis) 一个使用 Go 语言实现的 Redis Cluster 的集群方案
 - [Go 设计哲学](design_arts.md)
+- [learn-go-with-tests](https://github.com/spring2go/learn-go-with-tests)
+
 
 ## 资料
 
@@ -27,8 +39,19 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 - [GO 命令教程](https://github.com/hyper0x/go_command_tutorial)
 - [大道至简的Go语言-七牛云](http://open.qiniu.us/go-next-c.pdf)
 
+*课程*
+
+- [Go 并发编程实战课](https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2Fgeektime%2F01-%E4%B8%93%E6%A0%8F%E8%AF%BE%2F151-200%2F159-Go%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E8%AF%BE)
 - [Go 进阶训练营](https://pan.baidu.com/disk/main?from=oldversion#/index?category=all&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2FGo%E8%BF%9B%E9%98%B6%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F)
 - [golang 练习](https://github.com/cncamp/golang)
+- [手把手写一个 Web 框架](https://time.geekbang.org/column/intro/100090601)
+- [Go 语言项目开发实战](https://time.geekbang.org/column/intro/100079601)
+- [Go 语言核心 36 讲](https://time.geekbang.org/column/intro/100013101?tab=catalog)
+- [Go 语言从入门到实战](https://time.geekbang.org/course/intro/100024001)
+  [网盘地址](https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2Fgeektime%2F02-%E8%A7%86%E9%A2%91%E8%AF%BE%2F50-99%2F59-Go%E8%AF%AD%E8%A8%80%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E6%88%98)
+- [Go 并发编程实战课](https://time.geekbang.org/column/intro/100061801) [网盘地址](https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2Fgeektime%2F01-%E4%B8%93%E6%A0%8F%E8%AF%BE%2F151-200%2F159-Go%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E8%AF%BE)
+- [Tony Bai - Go 语言第一课](https://time.geekbang.org/column/intro/100093501)
+
 
 *Blog*
 

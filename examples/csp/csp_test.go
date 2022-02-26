@@ -18,3 +18,8 @@ func TestProducerToConsumer(t *testing.T) {
 func TestSelectExample(t *testing.T) {
 	selectExample1()
 }
+
+// Test: context
+func TestContextDeadline(t *testing.T) {
+	contextDeadline()
+}

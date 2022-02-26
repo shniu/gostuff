@@ -1,0 +1,24 @@
+
+syntax = "proto3";
+
+option go_package = "github.com/shniu/gostuff/projects/gmq/internal/protocol/protobuf";
+option java_multiple_files = true;
+option java_package = "io.github.shniu.gmq.protocol";
+option java_outer_classname = "MessageServiceProto";
+
+package protobuf;
+
+service MessageService {
+  rpc Send (Payload) returns (Reply);
+}
+
+message Reply {
+  string code = 1;
+}
+
+// producer load balancer
+message Payload {
+  string topic = 1;
+  uint32 len = 2;
+  bytes data = 3;
+}

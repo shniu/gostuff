@@ -13,3 +13,4 @@
 独立项目
 
 - [shniu/gokits](https://github.com/shniu/gokits) - Golang development tool kits.
+- [企业级的 Go 语言实战项目（可作为Go项目开发脚手架）](https://github.com/shniu/iam)
