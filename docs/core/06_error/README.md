@@ -4,7 +4,7 @@
 Golang 使用 error 来处理异常，需要显示的来处理异常，这个有别于 Java 的 Exception 机制，与 c/c++ 也不同。
 Golang 支持多参数返回，将 err 放入返回值中，调用完成后需要对 err 进行立即处理。
 
-代码在：[](../../../best/error.go)
+代码在：[best/error.go](../../../best/error.go)
 
 Golang 的异常处理包括：
 
