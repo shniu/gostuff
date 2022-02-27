@@ -22,7 +22,7 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 
 - [学习 Golang Code](https://www.notion.so/shniu/golang-40ee2f6810b340878eee1af312f06e96)
   - [Codis](https://github.com/CodisLabs/codis) 一个使用 Go 语言实现的 Redis Cluster 的集群方案
-- [Go 设计哲学](design_arts.md)
+- [Go 设计哲学](core/08_oop/README.md)
 - [learn-go-with-tests](https://github.com/spring2go/learn-go-with-tests)
 
 

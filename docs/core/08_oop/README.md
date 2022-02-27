@@ -3,7 +3,7 @@
 
 # Go 编程范式
 
-Go 可以被认为是一个OO的语言，OOP的基石是封装、继承、多态等特性，Go 语言中又是如何表达的呢？
+Go 可以被认为是一个 OO 的语言，OOP 的基石是封装、继承、多态等特性，Go 语言中又是如何表达的呢？
 
 ## 用 Go 做 OOP
 
@@ -13,11 +13,12 @@ Go 语言崇尚极致的简单性。
 
 1. Go 语言没有类，没有对象，没有异常和模板
 2. Go 语言支持垃圾回收和内建的并发
-3. 有关面向对象方面的最显著的遗漏是Go语言中没有类型层次结构, 与大多数面向对象语言如C++，Java，C＃，Scala甚至动态语言（如Python和Ruby）形成对比
+3. 有关面向对象方面的最显著的遗漏是 Go 语言中没有类型层次结构, 与大多数面向对象语言如C++，Java，C＃，
+   Scala甚至动态语言（如Python和Ruby）形成对比，使用 ducking type 和 组合实现 OOP 的主要特性
 
 ### Go OO 特性
 
-Go语言没有类，但它支持类型。 特别是， 它支持structs。 Structs是用户定义的类型。 Struct类型(含方法)提供类似于其它语言中类的服务。
+Go 语言没有类，但它支持类型。特别是，它支持 structs。 Structs 是用户定义的类型。 Struct 类型 (含方法) 提供类似于其它语言中类的服务。
 
 - struct
 
@@ -69,8 +70,8 @@ fmt.Println(dragon.WingSpan)
 
 - interface
 
-接口是Go语言对面向对象支持的标志。 接口是声明方法集的类型。 与其它语言中的接口类似，它们不包含方法的实现。
-实现所有接口方法的对象自动地实现接口。 它没有继承或子类或“implements”关键字。这种特性叫 `duck-typing`.
+接口是 Go 语言对面向对象支持的标志。 接口是声明方法集的类型。 与其它语言中的接口类似，它们不包含方法的实现。
+实现所有接口方法的对象自动地实现接口。 它没有继承或子类或 `implements` 关键字。这种特性叫 `duck-typing`.
 
 ### OOD: Go 的方式
 
@@ -275,5 +276,5 @@ func main() {
 ```
 ## 博客
 
-- [与Go同行：Golang面向对象编程](https://code.tutsplus.com/zh-hans/tutorials/lets-go-object-oriented-programming-in-golang--cms-26540)
+- [与Go同行：Golang 面向对象编程](https://code.tutsplus.com/zh-hans/tutorials/lets-go-object-oriented-programming-in-golang--cms-26540)
 - [37 | 编程范式游记（8）- Go 语言的委托模式](https://time.geekbang.org/column/article/2748)

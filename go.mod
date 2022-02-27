@@ -6,6 +6,7 @@ require (
 	github.com/golang/glog v1.0.0
 	github.com/google/btree v1.0.0 // indirect
 	github.com/peterbourgon/diskv v2.0.1+incompatible
+	github.com/pkg/errors v0.9.1 // indirect
 	// github.com/peterbourgon/diskv v2.0.1+incompatible
 	github.com/sirupsen/logrus v1.7.0
 	github.com/stretchr/testify v1.6.1
