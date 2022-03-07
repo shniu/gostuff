@@ -1,6 +1,11 @@
 
 ## Golang 的异常处理
 
+> **Errors in Go are not Exceptions.**<br>
+> In other languages, you are uncertain if a function may throw an exception or not. 
+> Instead of throwing exceptions, Go functions support multiple return values, and by convention, 
+> this ability is commonly used to return the function’s result along with an error variable.
+
 Golang 使用 error 来处理异常，需要显示的来处理异常，这个有别于 Java 的 Exception 机制，与 c/c++ 也不同。
 Golang 支持多参数返回，将 err 放入返回值中，调用完成后需要对 err 进行立即处理。
 
@@ -215,8 +220,6 @@ if errors.As(err, &e) {
 
 ## Reference
 
-- [Go errors with additional details](https://romanyx90.medium.com/go-errors-with-additional-details-66873577f3a9)
-
 ### Go2 Error Propasal
 
 - https://go.googlesource.com/proposal/+/master/design/29934-error-values.md
@@ -226,6 +229,8 @@ if errors.As(err, &e) {
 
 ### Blogs related error handling
 
+- [Why Go gets exceptions right](https://dave.cheney.net/2012/01/18/why-go-gets-exceptions-right)
+- [Go errors with additional details](https://romanyx90.medium.com/go-errors-with-additional-details-66873577f3a9)
 - [Go 语言的错误处理机制引发争议](https://www.infoq.cn/news/2012/11/go-error-handle/)
 
 重点讨论了 Go 的错误处理机制和其他语言的不同，Go 选择了多返回值 + error 的方式，painc + recover 是针对特殊情况设计的
@@ -237,3 +242,51 @@ Go 的设计遵循了对错误清洗简单的处理，我们明确知道什么�
 
 Go 的开发者认为，将异常和控制结构耦合在一起，会导致代码复杂化，将过多的错误标记为异常也不是一种好的实践。
 
+- [Error Handling In Go, Part I](https://www.ardanlabs.com/blog/2014/10/error-handling-in-go-part-i.html)
+- [Error Handling In Go, Part II](https://www.ardanlabs.com/blog/2014/11/error-handling-in-go-part-ii.html)
+
+- [Design Philosophy On Logging](https://www.ardanlabs.com/blog/2017/05/design-philosophy-on-logging.html)
+
+结论：
+
+Handling an error means:
+* The error has been logged.
+* The application is back to 100% integrity.
+* The current error is not reported any longer.
+
+1. Packages that are reusable across many projects only return root error values.
+2. If the error is not going to be handled, wrap and return up the call stack.
+3. Once an error is handled, it is not allowed to be passed up the call stack any longer.
+
+- [Error Handling in Go](https://medium.com/gett-engineering/error-handling-in-go-53b8a7112d04)
+- [Error Handling in Go 1.13](https://medium.com/gett-engineering/error-handling-in-go-1-13-5ee6d1e0a55c)
+
+Go1.13: 
+> An error e can wrap another error w by providing an Unwrap method that returns w. Both e and w are available to programs, 
+> allowing e to provide additional context to w or to reinterpret it while still allowing programs to make decisions based on w.
+
+- [Why Go's Error Handling is Awesome](https://rauljordan.com/2020/07/06/why-go-error-handling-is-awesome.html)
+
+If you handle errors in Go the standard way, you get the benefits of:
+
+No hidden control-flows
+No unexpected uncaught exception logs blowing up your terminal (aside from actual program crashes via panics)
+full-control of errors in your code as values you can handle, return, and do anything you want with
+
+> 1. Add stack traces when your errors are actionable to developers
+> 2. Do something with your returned errors, don’t just bubble them up to main, log them, and forget them
+> 3. Keep your error chains unambiguous
+
+- [Effective error handling in Go](https://morsmachine.dk/error-handling)
+- [Go 1.13: xerrors](https://crawshaw.io/blog/xerrors)
+- https://dave.cheney.net/2015/01/26/errors-and-exceptions-redux
+- https://dave.cheney.net/2014/11/04/error-handling-vs-exceptions-redux
+- https://dave.cheney.net/2014/12/24/inspecting-errors
+- https://dave.cheney.net/2016/04/07/constant-errors
+- https://dave.cheney.net/2019/01/27/eliminate-error-handling-by-eliminating-errors
+- https://dave.cheney.net/2016/06/12/stack-traces-and-the-errors-package
+- https://dave.cheney.net/2016/04/27/dont-just-check-errors-handle-them-gracefully
+- https://blog.golang.org/errors-are-values
+- https://blog.golang.org/error-handling-and-go
+- https://blog.golang.org/go1.13-errors
+- https://commandcenter.blogspot.com/2017/12/error-handling-in-upspin.html
