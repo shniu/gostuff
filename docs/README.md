@@ -1,4 +1,4 @@
-# Go 生态
+# Go
 
 怎么把学习的东西梳理串联起来，是一个问题
 
@@ -51,6 +51,7 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
   [网盘地址](https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2Fgeektime%2F02-%E8%A7%86%E9%A2%91%E8%AF%BE%2F50-99%2F59-Go%E8%AF%AD%E8%A8%80%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%AE%9E%E6%88%98)
 - [Go 并发编程实战课](https://time.geekbang.org/column/intro/100061801) [网盘地址](https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2Fgeektime%2F01-%E4%B8%93%E6%A0%8F%E8%AF%BE%2F151-200%2F159-Go%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E8%AF%BE)
 - [Tony Bai - Go 语言第一课](https://time.geekbang.org/column/intro/100093501)
+  - [gopher daily](https://github.com/bigwhite/gopherdaily)
 
 
 *Blog*
@@ -88,3 +89,34 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 - glog
 - golang 官方 log: https://github.com/golang/go/tree/master/src/log
 - logru: https://github.com/sirupsen/logrus
+
+--- 
+
+Website
+
+* GoLandLibs (https://golanglibs.com/)   Go libs 的大汇总
+* Go Blog 官方 (https://blog.golang.org/index)
+* Go 相关技术文章 (https://cizixs.com/)  (Container, Microservice, Python, Go, Reading, Life, And Love)
+
+项目
+
+* Awesome-go (https://github.com/avelino/awesome-go)
+* Cobra (https://github.com/spf13/cobra)  A Commander for modern Go CLI interactions, star 9k+, widely used
+* viper (https://github.com/spf13/viper)  Go configuration with fangs, star 7k+
+* Hugo (https://gohugo.io/)   The world’s fastest framework for building websites
+
+语法特性
+
+* Go Slices (https://blog.golang.org/go-slices-usage-and-internals)， also look Slice (https://blog.golang.org/slices)
+
+Go 的数组是值，而非指针（引用）。Slice 是数组段的描述符，It consists of a pointer to the array, the length of the segment, and its capacity。
+
+array 和 slice 是有区别的
+
+* Go errors and values (https://blog.golang.org/errors-are-values)  todo
+
+最佳实践
+
+* Reading files in Go — an overview (https://kgrz.io/reading-files-in-go-an-overview.html), Github code: https://github.com/shniu/reading-files-in-go
+* Go http 服务器编程 (https://cizixs.com/2016/08/17/golang-http-server-side/)   深入浅出
+* Go Json Guide (https://cizixs.com/2016/12/19/golang-json-guide/)   深入浅出
