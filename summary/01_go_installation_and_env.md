@@ -29,3 +29,11 @@ export GOSUMDB=off                           # 关闭校验 Go 依赖包的哈�
 # test
 go version
 ```
+
+## Golang 源码学习方式
+
+快速掌握的技巧：库函数 -> 结构定义 -> 结构函数
+
+1. 首先搞清楚这个库对外提供什么功能, 可以使用 `go doc net/http | grep "^func"`
+2. 再搞清楚整个库被分为几个核心部分, 可以使用 `go doc net/http | grep "^type" | grep struct`
+3. 最后搞清楚每个部分都做了什么

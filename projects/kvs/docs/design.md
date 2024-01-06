@@ -43,6 +43,8 @@ Plan:
 Paper or Blog Todo List
 
 - [x] [Bitcask intro](https://github.com/basho/bitcask/blob/develop/doc/bitcask-intro.pdf)
+- [x] [Understanding Bitcask - A Log-Structured fast KV store](https://arpitbhayani.me/blogs/bitcask/)
+- [ ] [存储架构｜Bitcask 引擎的设计，秒！](https://www.51cto.com/article/697752.html)
 - [x] [Implementing a key value store](http://codecapsule.com/2012/11/07/ikvs-implementing-a-key-value-store-table-of-contents/)
 - [ ] [LevelDB](https://github.com/google/leveldb/blob/master/doc/impl.md)
   - [ ] [LevelDB and Node: What is LevelDB Anyway?](http://web.archive.org/web/20130502222338/http://dailyjs.com/2013/04/19/leveldb-and-node-1/)
@@ -110,10 +112,12 @@ func (kvs *KVStore) Delete(key string) (bool, error)
 - [Amazon Dynamo](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 - [LevelDB](http://leveldb.org)
 - [使用raft算法快速构建一个分布式kv系统](https://laohanlinux.github.io/2016/04/25/%E4%BD%BF%E7%94%A8raft%E7%AE%97%E6%B3%95%E5%BF%AB%E7%86%9F%E6%9E%84%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%88%86%E5%B8%83%E5%BC%8F%E7%9A%84key-value%E7%B3%BB%E7%BB%9F/)
+- [GoBeansDB 架构设计](https://1024.today/zh_CN/latest/distributed_system/kv_store.html)
 
 ### Project Ref
 
 - [beecask](https://github.com/yplusplus/beecask)
+- [prologic/bitcask](https://git.mills.io/prologic/bitcask.git)
 - [leveldb java impl](https://github.com/dain/leveldb/)
 - [golang/leveldb](https://github.com/golang/leveldb)
 - [google/leveldb](https://github.com/google/leveldb)
