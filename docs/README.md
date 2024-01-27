@@ -42,8 +42,8 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 *课程*
 
 - [Go 并发编程实战课](https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2Fgeektime%2F01-%E4%B8%93%E6%A0%8F%E8%AF%BE%2F151-200%2F159-Go%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E8%AF%BE)
-- [Go 进阶训练营](https://pan.baidu.com/disk/main?from=oldversion#/index?category=all&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2FGo%E8%BF%9B%E9%98%B6%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F)
-- [golang 练习](https://github.com/cncamp/golang)
+- [营](https://pan.baidu.com/disk/main?from=oldversion#/index?category=all&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2FGo%E8%BF%9B%E9%98%B6%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F)
+- [golang 练Go 进阶训练习](https://github.com/cncamp/golang)
 - [手把手写一个 Web 框架](https://time.geekbang.org/column/intro/100090601)
 - [Go 语言项目开发实战](https://time.geekbang.org/column/intro/100079601)
 - [Go 语言核心 36 讲](https://time.geekbang.org/column/intro/100013101?tab=catalog)
