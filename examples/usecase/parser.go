@@ -2,14 +2,15 @@ package usecase
 
 import (
 	"fmt"
-	"github.com/360EntSecGroup-Skylar/excelize/v2"
 	"strings"
+
+	"github.com/xuri/excelize/v2"
 )
 
 // Parse excel, return records
 
 var currencyMaps = map[string]string{
-	"Fiat": "USD",
+	"Fiat":      "USD",
 	"BTC Asset": "BTC",
 	"BCH Asset": "BCH",
 	"LTC Asset": "LTC",

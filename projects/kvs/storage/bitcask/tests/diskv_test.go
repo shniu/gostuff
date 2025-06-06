@@ -10,9 +10,10 @@ package tests
 import (
 	"crypto/md5"
 	"fmt"
-	"github.com/peterbourgon/diskv"
 	"io"
 	"testing"
+
+	diskv "github.com/peterbourgon/diskv/v3"
 )
 
 func TestDiskv(t *testing.T) {
