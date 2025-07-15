@@ -25,25 +25,24 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 - [Go 设计哲学](core/08_oop/README.md)
 - [learn-go-with-tests](https://github.com/spring2go/learn-go-with-tests)
 
-
 ## 资料
 
-- [Go语言规范文档](https://golang.google.cn/ref/spec)
-- [Go语言命令文档](https://golang.google.cn/doc/cmd)
-- [Go语言wiki](https://github.com/golang/go/wiki)
+- [Go 语言规范文档](https://golang.google.cn/ref/spec)
+- [Go 语言命令文档](https://golang.google.cn/doc/cmd)
+- [Go 语言 wiki](https://github.com/golang/go/wiki)
 - [Effective Go](https://golang.google.cn/doc/effective_go.html)
 - [Go 内存模型](https://golang.google.cn/ref/mem)
 - [Go 程序诊断](https://golang.google.cn/doc/diagnostics.html)
 - [Golang 官方博客](https://blog.golang.org/index)
 - [Golang 第三方仓库的整合与索引](https://libs.garden/go) 非常值得关注，能看到大家都在关注些什么
 - [GO 命令教程](https://github.com/hyper0x/go_command_tutorial)
-- [大道至简的Go语言-七牛云](http://open.qiniu.us/go-next-c.pdf)
+- [大道至简的 Go 语言-七牛云](http://open.qiniu.us/go-next-c.pdf)
 
-*课程*
+_课程_
 
 - [Go 并发编程实战课](https://pan.baidu.com/disk/home?#/all?vmode=list&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2Fgeektime%2F01-%E4%B8%93%E6%A0%8F%E8%AF%BE%2F151-200%2F159-Go%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E5%AE%9E%E6%88%98%E8%AF%BE)
 - [营](https://pan.baidu.com/disk/main?from=oldversion#/index?category=all&path=%2F%E6%9C%80%E6%96%B0%E8%AE%AD%E7%BB%83%E8%90%A5%E8%B5%84%E6%96%99%2FGo%E8%BF%9B%E9%98%B6%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E5%9B%9B%E6%9C%9F)
-- [golang 练Go 进阶训练习](https://github.com/cncamp/golang)
+- [golang 练 Go 进阶训练习](https://github.com/cncamp/golang)
 - [手把手写一个 Web 框架](https://time.geekbang.org/column/intro/100090601)
 - [Go 语言项目开发实战](https://time.geekbang.org/column/intro/100079601)
 - [Go 语言核心 36 讲](https://time.geekbang.org/column/intro/100013101?tab=catalog)
@@ -53,8 +52,7 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 - [Tony Bai - Go 语言第一课](https://time.geekbang.org/column/intro/100093501)
   - [gopher daily](https://github.com/bigwhite/gopherdaily)
 
-
-*Blog*
+_Blog_
 
 - [Cizixs Write Here](https://cizixs.com/) 是一个关于 Container, Microservice, Python, Go, Reading, Life, And Love 的博客站点
 - [kgrz.io](https://kgrz.io/)
@@ -63,18 +61,18 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 - https://bytemode.github.io/reading/
 - [为什么这么设计系列文章](https://draveness.me/whys-the-design/) - 一系列关于计算机领域中程序设计决策的文章
 
-*Book*
+_Book_
 
-- [Go语言 101](https://gfw.go101.org/article/101.html)
+- [Go 语言 101](https://gfw.go101.org/article/101.html)
 - [Go 语言设计与实现](https://draveness.me/golang/)
   - 目标读者：学习过 Go 语言并且想要理解背后设计与实现的开发者和有过其他语言的开发经验，想要学习 Go 语言的开发者
   - 本书主要是分析 Golang 内部的实现原理，有一定深度
 
-*Lib*
+_Lib_
 
 - [awesome-go](https://github.com/avelino/awesome-go) 和 golang 相关的框架、库和软件的清单
-- [cobra](https://github.com/spf13/cobra) 是一个强大的创建CLI应用的库，也是一个生成应用和命令文件的库，应用非常广泛，14K+ star
-- [viper](https://github.com/spf13/viper) 是一个 Go 应用的配置解决方案，配合cobra使用非常cool，10k+ star
+- [cobra](https://github.com/spf13/cobra) 是一个强大的创建 CLI 应用的库，也是一个生成应用和命令文件的库，应用非常广泛，14K+ star
+- [viper](https://github.com/spf13/viper) 是一个 Go 应用的配置解决方案，配合 cobra 使用非常 cool，10k+ star
 - [go hugo](https://gohugo.io/) The world’s fastest framework for building websites, 39k+ star
 - [go wiki projects](https://github.com/golang/go/wiki/Projects)
 - [go metrics](https://github.com/rcrowley/go-metrics)
@@ -84,39 +82,43 @@ Golang 已经发展出了一个生态圈，围绕 Go 语言的核心能力打造
 - [gnet](https://github.com/panjf2000/gnet) - gnet is a high-performance, lightweight, non-blocking, event-driven networking framework written in pure Go.
 - [env](https://github.com/timest/env) This lib is used for dealing with environment variables in Golang
 
-*日志*
+_日志_
 
 - glog
 - golang 官方 log: https://github.com/golang/go/tree/master/src/log
 - logru: https://github.com/sirupsen/logrus
 
---- 
+---
 
 Website
 
-* GoLandLibs (https://golanglibs.com/)   Go libs 的大汇总
-* Go Blog 官方 (https://blog.golang.org/index)
-* Go 相关技术文章 (https://cizixs.com/)  (Container, Microservice, Python, Go, Reading, Life, And Love)
+- GoLandLibs (https://golanglibs.com/) Go libs 的大汇总
+- Go Blog 官方 (https://blog.golang.org/index)
+- Go 相关技术文章 (https://cizixs.com/) (Container, Microservice, Python, Go, Reading, Life, And Love)
 
 项目
 
-* Awesome-go (https://github.com/avelino/awesome-go)
-* Cobra (https://github.com/spf13/cobra)  A Commander for modern Go CLI interactions, star 9k+, widely used
-* viper (https://github.com/spf13/viper)  Go configuration with fangs, star 7k+
-* Hugo (https://gohugo.io/)   The world’s fastest framework for building websites
+- Awesome-go (https://github.com/avelino/awesome-go)
+- Cobra (https://github.com/spf13/cobra) A Commander for modern Go CLI interactions, star 9k+, widely used
+- viper (https://github.com/spf13/viper) Go configuration with fangs, star 7k+
+- Hugo (https://gohugo.io/) The world’s fastest framework for building websites
 
 语法特性
 
-* Go Slices (https://blog.golang.org/go-slices-usage-and-internals)， also look Slice (https://blog.golang.org/slices)
+- Go Slices (https://blog.golang.org/go-slices-usage-and-internals)， also look Slice (https://blog.golang.org/slices)
 
 Go 的数组是值，而非指针（引用）。Slice 是数组段的描述符，It consists of a pointer to the array, the length of the segment, and its capacity。
 
 array 和 slice 是有区别的
 
-* Go errors and values (https://blog.golang.org/errors-are-values)  todo
+- Go errors and values (https://blog.golang.org/errors-are-values) todo
 
 最佳实践
 
-* Reading files in Go — an overview (https://kgrz.io/reading-files-in-go-an-overview.html), Github code: https://github.com/shniu/reading-files-in-go
-* Go http 服务器编程 (https://cizixs.com/2016/08/17/golang-http-server-side/)   深入浅出
-* Go Json Guide (https://cizixs.com/2016/12/19/golang-json-guide/)   深入浅出
+- Reading files in Go — an overview (https://kgrz.io/reading-files-in-go-an-overview.html), Github code: https://github.com/shniu/reading-files-in-go
+- Go http 服务器编程 (https://cizixs.com/2016/08/17/golang-http-server-side/) 深入浅出
+- Go Json Guide (https://cizixs.com/2016/12/19/golang-json-guide/) 深入浅出
+
+## 日常总结
+
+- [静态代码检查](develop/golang-code-lint.md)
